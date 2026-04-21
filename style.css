@@ -584,13 +584,17 @@ textarea {
     }
 
     .menu {
-        flex-direction: column;
-        gap: 10px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 5px;
+        justify-content: center;
     }
 
     .nav-container {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
     }
 
     .cta-buttons {
