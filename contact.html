@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Saugat Parajuli | IT Professional</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="normal">
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="logo.webp" alt="logo" class="image">
+            </div>
+            <div class="menu">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="projects.html">Projects</a>
+                <a href="contact.html"><span class="page">Contact</span></a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="contact-hero-content">
+            <h1>Let's Connect</h1>
+            <p class="contact-subtitle">Have a project in mind or want to discuss opportunities? I'd love to hear from you.</p>
+            <p class="response-time">📧 I typically respond within 24 hours</p>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="contact-main">
+        <div class="contact-container">
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper">
+                <h2>Send me a Message</h2>
+                <form id="contactForm" class="professional-form">
+                    <div class="form-group">
+                        <label for="name">Full Name *</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                        <span class="form-error" id="nameError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email Address *</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                        <span class="form-error" id="emailError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Subject *</label>
+                        <input type="text" id="subject" name="subject" placeholder="Project inquiry" required>
+                        <span class="form-error" id="subjectError"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" placeholder="Tell me about your project, requirements, or any questions you have..." rows="7" required></textarea>
+                        <span class="form-error" id="messageError"></span>
+                        <span class="char-count"><span id="charCount">0</span>/500</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contact-btn">Send Message</button>
+                    <p class="form-note">* Required fields</p>
+                </form>
+                <div id="successMessage" class="success-message" style="display:none;">
+                    ✓ Message sent successfully! I'll get back to you soon.
+                </div>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="contact-info-wrapper">
+                <h2>Contact Information</h2>
+                
+                <div class="contact-info-cards">
+                    <div class="info-card">
+                        <div class="info-icon">📧</div>
+                        <h3>Email</h3>
+                        <p><a href="mailto:parajulisaugat9812@gmail.com">parajulisaugat9812@gmail.com</a></p>
+                        <span class="info-label">Best for detailed inquiries</span>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p><a href="tel:+9779702005342">+977 9702005342</a></p>
+                        <span class="info-label">Available for calls</span>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">💬</div>
+                        <h3>WhatsApp</h3>
+                        <p><a href="https://wa.me/9779702005342" target="_blank" class="whatsapp-link">Message on WhatsApp</a></p>
+                        <div class="qr-code">
+                            <img src="QR WA.jpg" alt="WhatsApp QR Code" class="qr-image">
+                        </div>
+                        <span class="info-label">Scan to chat instantly</span>
+                    </div>
+
+                    <div class="info-card">
+                        <div class="info-icon">🌐</div>
+                        <h3>Social Media</h3>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/saugat.parajli" target="_blank" class="social-link">Facebook</a>
+                            <a href="https://www.instagram.com/saugat.parajli/" target="_blank" class="social-link">Instagram</a>
+                        </div>
+                        <span class="info-label">Connect with me</span>
+                    </div>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="contact-details">
+                    <h3>Why Reach Out?</h3>
+                    <ul class="reasons-list">
+                        <li>💼 Project collaborations</li>
+                        <li>🔧 Technical consultations</li>
+                        <li>📚 Learning opportunities</li>
+                        <li>🤝 Networking & partnerships</li>
+                        <li>❓ General inquiries</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="contact-faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-grid">
+            <div class="faq-item">
+                <h4>What's your typical response time?</h4>
+                <p>I aim to respond to all inquiries within 24 hours during business days.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What's your availability?</h4>
+                <p>I'm available for projects and collaborations. Check my portfolio for current work.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Do you offer consultations?</h4>
+                <p>Yes! I'm happy to discuss technical challenges and provide guidance.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What's your preferred contact method?</h4>
+                <p>Email works best for detailed inquiries. Phone for quick discussions.</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
