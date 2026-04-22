@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fibonacci & Prime Number Generator - Saugat Parajuli</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-detail {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .back-link {
+            margin-bottom: 1rem;
+        }
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="normal">
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../logo.webp" alt="logo" class="image">
+            </div>
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html"><span class="page">Projects</span></a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="back-link">
+            <a href="../projects.html">← Back to Projects</a>
+        </div>
+
+        <div class="project-detail">
+            <h1>Fibonacci & Prime Number Generator</h1>
+            <span class="project-tag">C Programming</span>
+            
+            <h2>Overview</h2>
+            <p>A collection of mathematical programs that generate Fibonacci sequences and identify prime numbers up to a given limit. These projects demonstrate fundamental algorithm implementation and loop control structures in C.</p>
+
+            <h2>Features</h2>
+            <ul>
+                <li>Fibonacci sequence generation with iterative approach</li>
+                <li>Recursive Fibonacci implementation</li>
+                <li>Prime number detection and validation</li>
+                <li>Generate all prime numbers up to N (Sieve of Eratosthenes)</li>
+                <li>Performance comparison between iterative and recursive approaches</li>
+                <li>User-friendly console interface</li>
+            </ul>
+
+            <h2>Technologies Used</h2>
+            <div class="project-tech">
+                <span>C</span>
+                <span>Loops</span>
+                <span>Algorithms</span>
+                <span>Recursion</span>
+            </div>
+
+            <h2>Code Examples</h2>
+            <div class="code-block">
+<pre>// Fibonacci - Iterative Approach
+void fibonacciIterative(int n) {
+    int a = 0, b = 1;
+    printf("Fibonacci Series: ");
+    
+    for(int i = 0; i < n; i++) {
+        printf("%d ", a);
+        int temp = a + b;
+        a = b;
+        b = temp;
+    }
+    printf("\n");
+}
+
+// Prime Number Checker
+int isPrime(int num) {
+    if(num <= 1) return 0;
+    if(num == 2) return 1;
+    if(num % 2 == 0) return 0;
+    
+    for(int i = 3; i * i <= num; i += 2) {
+        if(num % i == 0) return 0;
+    }
+    return 1;
+}</pre>
+            </div>
+
+            <h2>Learning Outcomes</h2>
+            <ul>
+                <li>Understanding of iterative and recursive algorithms</li>
+                <li>Loop control and nested loop logic</li>
+                <li>Mathematical algorithm implementation</li>
+                <li>Performance optimization concepts</li>
+                <li>Prime number theory and number theory basics</li>
+            </ul>
+
+            <h2>Links</h2>
+            <div class="project-links">
+                <a href="https://github.com/SaugatParajuli1229/Saugat" target="_blank" class="btn btn-small">View Code on GitHub</a>
+                <a href="../projects.html" class="btn btn-small btn-secondary">Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>

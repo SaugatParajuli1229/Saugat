@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Manipulation Toolkit - Saugat Parajuli</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-detail {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .back-link {
+            margin-bottom: 1rem;
+        }
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="normal">
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../logo.webp" alt="logo" class="image">
+            </div>
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html"><span class="page">Projects</span></a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="back-link">
+            <a href="../projects.html">← Back to Projects</a>
+        </div>
+
+        <div class="project-detail">
+            <h1>String Manipulation Toolkit</h1>
+            <span class="project-tag">C Programming</span>
+            
+            <h2>Overview</h2>
+            <p>A comprehensive toolkit providing various string manipulation utilities. This project demonstrates essential string handling techniques and array manipulation in C, including common algorithms for string processing.</p>
+
+            <h2>Features</h2>
+            <ul>
+                <li>Palindrome checker - detects if a string reads the same forwards and backwards</li>
+                <li>Word counter - counts words in a given string</li>
+                <li>Character reversal - reverses a string character by character</li>
+                <li>Case conversion - converts between uppercase and lowercase</li>
+                <li>String length calculator</li>
+                <li>Character frequency analyzer</li>
+                <li>Substring finder</li>
+                <li>Whitespace trimmer</li>
+            </ul>
+
+            <h2>Technologies Used</h2>
+            <div class="project-tech">
+                <span>C</span>
+                <span>String Functions</span>
+                <span>Arrays</span>
+                <span>Character Processing</span>
+            </div>
+
+            <h2>Code Examples</h2>
+            <div class="code-block">
+<pre>// Palindrome Checker
+int isPalindrome(char str[]) {
+    int left = 0, right = strlen(str) - 1;
+    while(left < right) {
+        if(str[left] != str[right])
+            return 0;
+        left++;
+        right--;
+    }
+    return 1;
+}
+
+// String Reversal
+void reverseString(char str[]) {
+    int n = strlen(str);
+    for(int i = 0; i < n/2; i++) {
+        char temp = str[i];
+        str[i] = str[n-1-i];
+        str[n-1-i] = temp;
+    }
+}
+
+// Word Counter
+int countWords(char str[]) {
+    int count = 0;
+    int inWord = 0;
+    for(int i = 0; str[i] != '\0'; i++) {
+        if(str[i] == ' ' || str[i] == '\t' || str[i] == '\n') {
+            inWord = 0;
+        } else if(!inWord) {
+            count++;
+            inWord = 1;
+        }
+    }
+    return count;
+}</pre>
+            </div>
+
+            <h2>Learning Outcomes</h2>
+            <ul>
+                <li>String handling and manipulation in C</li>
+                <li>Array traversal and manipulation</li>
+                <li>Character-level processing</li>
+                <li>String library functions (strlen, strcmp, strcpy)</li>
+                <li>Algorithm implementation for common string operations</li>
+                <li>Data validation and edge case handling</li>
+            </ul>
+
+            <h2>Links</h2>
+            <div class="project-links">
+                <a href="https://github.com/SaugatParajuli1229/Saugat" target="_blank" class="btn btn-small">View Code on GitHub</a>
+                <a href="../projects.html" class="btn btn-small btn-secondary">Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>
