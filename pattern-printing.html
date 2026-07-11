@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pattern Printing Programs - Saugat Parajuli</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-detail {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .back-link {
+            margin-bottom: 1rem;
+        }
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="normal">
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../logo.webp" alt="logo" class="image">
+            </div>
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html"><span class="page">Projects</span></a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="back-link">
+            <a href="../projects.html">← Back to Projects</a>
+        </div>
+
+        <div class="project-detail">
+            <h1>Pattern Printing Programs</h1>
+            <span class="project-tag">C Programming</span>
+            
+            <h2>Overview</h2>
+            <p>A comprehensive collection of programs demonstrating nested loop logic through various pattern generation exercises. These programs range from simple triangles to complex pyramids and ASCII art, making it an excellent resource for understanding loop iteration and conditional logic.</p>
+
+            <h2>Patterns Included</h2>
+            <ul>
+                <li>Triangular patterns (right, left, equilateral)</li>
+                <li>Pyramid patterns (numbers, stars, characters)</li>
+                <li>Diamond patterns with various fills</li>
+                <li>Hollow shapes (rectangles, diamonds)</li>
+                <li>ASCII art designs</li>
+                <li>Floyd's triangle</li>
+                <li>Pascal's triangle</li>
+                <li>Multiplication tables in pattern format</li>
+            </ul>
+
+            <h2>Technologies Used</h2>
+            <div class="project-tech">
+                <span>C</span>
+                <span>Nested Loops</span>
+                <span>Pattern Logic</span>
+                <span>Character Output</span>
+            </div>
+
+            <h2>Code Examples</h2>
+            <div class="code-block">
+<pre>// Right Triangle Pattern
+void rightTriangle(int n) {
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+}
+
+// Diamond Pattern
+void diamond(int n) {
+    for(int i = 1; i <= n; i++) {
+        for(int j = 1; j <= n - i; j++) {
+            printf(" ");
+        }
+        for(int j = 1; j <= 2*i - 1; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+    for(int i = n - 1; i >= 1; i--) {
+        for(int j = 1; j <= n - i; j++) {
+            printf(" ");
+        }
+        for(int j = 1; j <= 2*i - 1; j++) {
+            printf("*");
+        }
+        printf("\n");
+    }
+}</pre>
+            </div>
+
+            <h2>Learning Outcomes</h2>
+            <ul>
+                <li>Mastery of nested loop structures</li>
+                <li>Space and character management in loops</li>
+                <li>Loop boundary calculations</li>
+                <li>Algorithm visualization</li>
+                <li>Pattern recognition and implementation</li>
+                <li>Problem-solving with constraints</li>
+            </ul>
+
+            <h2>Links</h2>
+            <div class="project-links">
+                <a href="https://github.com/SaugatParajuli1229/Saugat" target="_blank" class="btn btn-small">View Code on GitHub</a>
+                <a href="../projects.html" class="btn btn-small btn-secondary">Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>

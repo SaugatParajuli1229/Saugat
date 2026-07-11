@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Saugat Parajuli</title>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .project-detail {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 8px;
+        }
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 1.5rem;
+            border-radius: 8px;
+            overflow-x: auto;
+            margin: 1rem 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            line-height: 1.5;
+        }
+        .back-link {
+            margin-bottom: 1rem;
+        }
+        .back-link a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="normal">
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+                <img src="../logo.webp" alt="logo" class="image">
+            </div>
+            <div class="menu">
+                <a href="../index.html">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../projects.html"><span class="page">Projects</span></a>
+                <a href="../contact.html">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="projects-section">
+        <div class="back-link">
+            <a href="../projects.html">← Back to Projects</a>
+        </div>
+
+        <div class="project-detail">
+            <h1>Personal Portfolio Website</h1>
+            <span class="project-tag">Web Development</span>
+            
+            <h2>Overview</h2>
+            <p>A responsive portfolio website showcasing web development fundamentals. This website serves as a comprehensive introduction to web development using HTML5 for semantic structure and CSS3 for modern styling, featuring multiple pages and smooth navigation.</p>
+
+            <h2>Features</h2>
+            <ul>
+                <li>Multi-page structure (Home, About, Projects, Contact)</li>
+                <li>Responsive design that works on desktop, tablet, and mobile</li>
+                <li>Modern CSS3 styling with gradients and transitions</li>
+                <li>Navigation bar with active page highlighting</li>
+                <li>Project showcase grid with detailed project cards</li>
+                <li>Contact form with validation</li>
+                <li>Semantic HTML5 markup</li>
+                <li>Mobile-first design approach</li>
+            </ul>
+
+            <h2>Technologies Used</h2>
+            <div class="project-tech">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Responsive Design</span>
+            </div>
+
+            <h2>Project Structure</h2>
+            <div class="code-block">
+<pre>Portfolio Web/
+├── index.html              # Home page
+├── about.html              # About page
+├── projects.html           # Projects showcase
+├── contact.html            # Contact page
+├── style.css               # Main stylesheet
+├── script.js               # JavaScript functionality
+├── logo.webp               # Logo image
+└── projects/               # Project detail pages
+    ├── student-grade-system.html
+    ├── fibonacci-prime.html
+    ├── guessing-game.html
+    ├── pattern-printing.html
+    ├── string-manipulation.html
+    └── portfolio-website.html</pre>
+            </div>
+
+            <h2>Key Code Highlights</h2>
+            <div class="code-block">
+<pre>/* Responsive Grid Layout */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+/* Mobile First Media Query */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .menu {
+        flex-wrap: wrap;
+    }
+}</pre>
+            </div>
+
+            <h2>Learning Outcomes</h2>
+            <ul>
+                <li>HTML5 semantic structure and best practices</li>
+                <li>CSS3 flexbox and grid layouts</li>
+                <li>Responsive design and mobile-first approach</li>
+                <li>Modern CSS features (gradients, transitions, animations)</li>
+                <li>Cross-browser compatibility</li>
+                <li>Web accessibility concepts</li>
+                <li>User experience and interface design</li>
+            </ul>
+
+            <h2>Demo & Links</h2>
+            <div class="project-links">
+                <a href="../index.html" class="btn btn-small">View Live Demo</a>
+                <a href="https://github.com/SaugatParajuli1229/Saugat" target="_blank" class="btn btn-small">View Code on GitHub</a>
+                <a href="../projects.html" class="btn btn-small btn-secondary">Back to Projects</a>
+            </div>
+        </div>
+    </section>
+
+    <script src="../script.js"></script>
+</body>
+</html>
